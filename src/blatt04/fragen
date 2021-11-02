@@ -1,0 +1,6 @@
+# Aufgabe 4.2
+1. , statt ; benutzt
+2. Teilen durch 0
+3. Keywoard vergessen (z.B. if oder while)
+4. unsigned gibt es nicht in Java
+5. wenn man einen Long assigned, sollte man sichtbar machen, dass das Literal vom Typ long ist (1L)
