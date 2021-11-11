@@ -23,6 +23,7 @@ public class LoesungSterneAufSpirale extends LoesungZufallsSterne {
 	this.setSize(1024, 768);
 	this.setTitle("Lösung in der Klasse " + this.getClass().getName());
 	this.setVisible(true);
+	this.setLocationRelativeTo(null);
     }
 
     /** Main-Methode. Nichts zu ändern hier. */
