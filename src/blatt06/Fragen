@@ -1,0 +1,21 @@
+1. Was sind erlaubte Werte im Spielfeld?
+    1..9 für die jeweiligen Ziffern und 0
+
+2. Welche Bedeutung hat die 0?
+    leeres Feld
+
+3. Warum ist die Reihung testSpielFelder dreidimensional?
+    Weitere Dimension für die Reihung der Spielfelder
+   
+4. Was steht in der 1, 2. und 3. Dimension?
+   1. verschiedene Felder 2. y 3. x
+   
+5. Welche Dimension hat die Reihung testFeld in der Methode testSudokuChecker?
+    2-dimensional
+
+6. In der Methode testSudokuChecker wird this.spielFeld[8][8] auf 8 geändert. Ändert sich dadurch testSpielFelder auch? Wieso (nicht)?
+    Ja, dadurch wird testSpielFelder auch verändert, weil spielfeld ein Wert aus testSpielFelder ist und nicht der eigentliche Wert beim Zugriff, sondern eine Referenz auf den Ort im Speicherplatz übergeben wird.
+    
+ 7. Wie/wieso funktioniert die For-Each-Schleife in der Methode testSudokuChecker? Was wird hier durchlaufen?
+    Die Schleife geht nacheinander die Werte aus testSpielFelder durch und packt sie jeweils in die Variable testFeld.
+    Dabei wird QUASI ein Zähler von 0 gestartet, der Wert an der Stelle des Zählers in die Variable gespeichert und am Schleifenende der Zähler inkrementiert. Den Zähler sieht man hierbei aber nicht.

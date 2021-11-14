@@ -1,4 +1,4 @@
-﻿package blatt03;
+package blatt03;
 
 import java.awt.Color;
 import java.awt.Graphics;
