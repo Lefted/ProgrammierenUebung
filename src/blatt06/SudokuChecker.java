@@ -84,6 +84,10 @@ public class SudokuChecker {
 
 	/** Testmethode */
 	public void testSudokuChecker() {
+//		for (int i = 0; i < testSpielFelder.length; i++) {
+//			int[][] testFeld = testSpielFelder[i];
+//		}
+
 		for (int[][] testFeld : this.testSpielFelder) {
 			this.spielFeld = testFeld;
 
@@ -129,7 +133,6 @@ public class SudokuChecker {
 				return false;
 			}
 		}
-
 		return true;
 	}
 
