@@ -1,0 +1,25 @@
+1. Welche Instanzvariablen hat die Klasse HolidayFeatures?
+long featureBits
+
+2. Wie viele Features gibt es?
+Die Hälfte aller möglichen Features, wenn HolidayFeatures.random() genutzt wird
+Entspricht der Anzahl der Einsen in featureBits
+
+3. Steht das Bit für Gebirge ganz links oder ganz rechts?
+Das Bit für Gebirge steht ganz rechts, weil der long featureBits lowest Bit first ist und weil Gebirge als erstes
+im Features enum definiert wird.
+
+4. 
+
+a) Was macht der Aufruf Features.values() in der for-Schleife?
+Er gibt alle Werte als ein Array von Features zurück
+
+b) Wozu dient der Operator +=?
+Er konkateniert den bereits vorhandenen String mit dem aktuellen Feature und ", "
+c)
+Was macht der <<= Operator?
+Er shiftet das Bit um die gegebene Zahl nach links.
+
+
+5. Was kann man machen, falls mehr als 64 Features benötigt werden?
+Man kann statt einen Long einen Datentyp verwenden, der mehr als 64 Bit hat. (BigInteger oder BigDezimal)
