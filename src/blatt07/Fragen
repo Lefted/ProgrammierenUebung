@@ -4,6 +4,7 @@ long featureBits
 2. Wie viele Features gibt es?
 Die Hälfte aller möglichen Features, wenn HolidayFeatures.random() genutzt wird
 Entspricht der Anzahl der Einsen in featureBits
+30
 
 3. Steht das Bit für Gebirge ganz links oder ganz rechts?
 Das Bit für Gebirge steht ganz rechts, weil der long featureBits lowest Bit first ist und weil Gebirge als erstes

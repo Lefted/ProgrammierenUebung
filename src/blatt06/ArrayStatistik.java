@@ -31,11 +31,12 @@ public class ArrayStatistik {
 	System.out.println(String.format("median %s", median));
 
 	System.out.println("---------------------------------------");
-	double[][] schadensverteilung = { { 0, 74.4 }, { 350, 18.2 }, { 1_500, 6.1 }, { 5_000, 1.3 } };
+	double[][] schadensverteilung = { { 0, 0.744 }, { 350, 0.182 }, { 1_500, 0.061 }, { 5_000, 0.013 } };
 	double erwartungswert = 0;
 	for (double[] zuordnung : schadensverteilung) {
 	    erwartungswert += zuordnung[0] * zuordnung[1];
 	}
+	
 	System.out.println(String.format("Erwartungswert %s", erwartungswert));
     }
 }
