@@ -2,7 +2,7 @@ package blatt08;
 
 import java.awt.Point;
 
-public class MethodenUmgebung {
+public class MethodenUebung {
 
 	public static void main(String[] args) {
 
@@ -39,7 +39,7 @@ public class MethodenUmgebung {
 	}
 
 	public static int getAbgerundeteZahl(double fkz) {
-		return (int) Math.floor(fkz);
+		return (int) fkz;
 	}
 
 	public static boolean istRestlosTeilbar(int zahl, int modul) {
