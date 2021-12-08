@@ -1,0 +1,22 @@
+1. Warum muss im gegebenen Konstrukltor this verwendet werden?
+Weil man sich auf die Instanzvariablen und nicht auf die Parameter beziehen will.
+
+2. Warum sind die Koordinaten eines Point2D-Objektes nicht änderbar?
+Weil sie mit dem 'final' modifier deklariert wurden.
+
+3. Was passiert (graphisch betrachtet) in der Methode Point2D.rotate90DEG?
+Der Punkt wird 90° im Uhrzeigersinn um den Ursprung gedreht.
+
+4. Was passiert (graphisch betrachtet) in der Methode Line2D.rotate90DEG?
+Die Linie wird 90^im Uhrzeigersinn gedreht.
+
+5. Die diff-Methode berechnet die Differenz zweier 2D-Punkte. Sie hat aber nur einen Parameter (p2). Wo kommt der erste Punkt her?
+Da die Methode beim (hier ersten) Punkt aufgerufen wird, kann sie auf die Instanzvariablen x,y zugreifen und muss nur den anderen Punkt als Parameter akzeptieren.
+
+6. Zum Parameter p2 der diff-Methode:
+	Wo wird der gespeichert (Stack, Heap, Method-Area)?
+		-Im Stack
+		
+	Was ist an dem Parameter "Simultiertes Call By Reference"?
+		-Es wird eine Kopie einer Referenz auf einen anderen Punkt übergeben. Das bedeutet es ist eigentlich Call-by-value, doch weil die kopierte Referenz auf das gleiche Objekt
+		im Speicher zeigt, kann genauso der Punkt verändert werden. Dieses Verhalten entspricht quasi einem "call-by-reference".
